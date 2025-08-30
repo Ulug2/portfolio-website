@@ -3,20 +3,29 @@ import myEbalo from './assets/myEbalo.png'
 import { DiJavascript1, DiReact, DiPython, DiCss3, DiHtml5, DiMongodb, DiNodejs, DiDatabase, DiJava } from 'react-icons/di';
 import { SiTypescript, SiExpress, SiFirebase, SiNumpy, SiPandas, SiGit, SiGithub } from 'react-icons/si';
 import Projects from "./Projects"
-import Education from "./Education"
 import Experience from "./Experience"
 
 function Hero() {
+  // Smooth scroll function
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   return (
     <div className="hero">
       <nav className="nav-bar">
         <h3><span className="my-name">ULYKBEK</span>KHAIRULLA</h3>
         <div className="nav-links">
-          <button>About</button>
-          <button>Skills</button>
-          <button>Projects</button>
-          <button>Education</button>
-          <button>Experience</button>
+          <button onClick={() => scrollToSection('about')}>About</button>
+          <button onClick={() => scrollToSection('skills')}>Skills</button>
+          <button onClick={() => scrollToSection('projects')}>Projects</button>
+          <button onClick={() => scrollToSection('experience')}>Experience</button>
         </div>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/ulugbekkh/" target="_blank" rel="noopener noreferrer">
@@ -47,12 +56,12 @@ function Hero() {
             <h1>{"Khairulla />"}</h1>
             <h2>Fullstack Developer</h2>
             <p>YEARS OF<br/>EXPERIENCE</p>
-            <p>PROJECTS COMPLETED<br/>AROUND THE WORLD</p>
+            {/*<p>PROJECTS COMPLETED<br/>AROUND THE WORLD</p> */}
           </div>
           <img src={myEbalo} className="my-ebalo" alt="Profile"/>
         </div>
 
-        <div className="about-content">
+        <div id="about" className="about-content">
           <div>
             <h2>aboutMe()</h2>
             <p>
@@ -81,7 +90,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="skills-content">
+        <div id="skills" className="skills-content">
           <h2>skills()</h2>
           <div className="skills-grid">
             <div className="skill-item">
@@ -150,9 +159,12 @@ function Hero() {
             </div>
           </div>
         </div>
-        <Projects/>
-        <Education/>
-        <Experience/>
+        <div id="projects">
+          <Projects/>
+        </div>
+        <div id="experience">
+          <Experience/>
+        </div>
       </div>
       
     </div>

@@ -143,7 +143,7 @@
   font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
-  padding-left: 4rem;
+  padding-left: 3rem;
 }
 
 .hero-text-content p:first-of-type::before {
@@ -157,7 +157,7 @@
   line-height: 0.8;
 }
 
-.hero-text-content p:last-of-type::before {
+/* .hero-text-content p:last-of-type::before {
   content: "13";
   position: absolute;
   top: 0;
@@ -166,7 +166,7 @@
   font-weight: bold;
   color: rgba(255, 255, 255, 0.4);
   line-height: 0.8;
-}
+} */
 
 .my-ebalo {
   width: 500px;
@@ -253,7 +253,7 @@
 
 .skills-content {
   padding: 4rem 2rem;
-  max-width: 1200px;
+  max-width: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -316,6 +316,19 @@
 .skill-item:nth-child(6) svg { color: #68217a; } /* Source.ai/Express */
 .skill-item:nth-child(7) svg { color: #8cc84b; } /* Node.js */
 .skill-item:nth-child(8) svg { color: gray; } /* Generic */
+
+/* Add smooth scrolling to the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add scroll margin to account for fixed navbar if needed */
+#about,
+#skills, 
+#projects,
+#experience {
+  scroll-margin-top: 0rem;
+}
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
