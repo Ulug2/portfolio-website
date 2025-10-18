@@ -73,7 +73,7 @@ function Hero() {
         </div>
 
         <div id="about" className="about-content">
-          <div>
+          <div className="about-text-section">
             <h2>aboutMe()</h2>
             <p>
               I'm a Computer Science student at Gettysburg College, excited about

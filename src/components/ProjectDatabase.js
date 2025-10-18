@@ -76,23 +76,6 @@ const projects = [
         liveLink: 'doesnotexist'
     },
     {
-        id: 'replyAI',
-        title: 'Reply AI Chrome Extension',
-        event: 'Personal Project',
-        date: 'August 2025',
-        description: 'An AI-driven interactive Telegram Bot that delivers personalized learning experiences, real-time assessments, and adaptive feedback to students.',
-        achievements: [
-            'Created a secure Node.js Express backend integrating OpenAI APIs for audio transcription and chat completion.',
-            'Developed a responsive React  frontend with TypeScript for smooth transcription and response display.',
-            'Built a Chrome extension that records audio and generates AI-powered natural response suggestions in real time.'
-        ],
-        techStack: ['TypeScript', 'OpenAI APIs', 'Node.js', 'Express.js', 'React'],
-        images: [tutorAI4, tutorAI2, tutorAI3],
-        cover: [tutorAI4],
-        githubLink: 'https://github.com/Ulug2/w-extension',
-        liveLink: 'doesnotexist'
-    },
-    {
         id: 'greaseGallery',
         title: 'Grease Gallery Website',
         event: 'YCP Hackathon',
