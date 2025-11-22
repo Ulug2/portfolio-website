@@ -9,6 +9,9 @@
 }
 
 .nav-bar {
+  background-color: black;
+  border-bottom: 0.5px solid;
+  border-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,13 +33,17 @@
 
 .nav-bar .nav-links {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
   gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
+  max-height: 20px;
+  margin-right: 70px;
 }
 
-.nav-bar button {
+.button-nav {
   background: none;
   border: none;
   color: rgba(255, 255, 255, 0.8);
@@ -47,7 +54,7 @@
   transition: all 0.3s ease;
 }
 
-.nav-bar button:hover {
+.button-nav:hover {
   color: rgba(255, 255, 255, 1);
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -88,6 +95,8 @@
   border-radius: 25px;
   font-weight: 500;
   transition: all 0.3s ease;
+  max-width: 150px;
+  justify-content: center;
 }
 
 .nav-bar .email-btn:hover {
@@ -99,16 +108,20 @@
 .main-page {
   /* margin-top: 80px; */
   padding: 2rem;
+  margin: 0;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 .hero-content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  /* padding: 100px; */
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 4rem 2rem;
+  max-height: 500px;
+  margin-bottom: 100px;
 }
 
 .hero-text-content {
@@ -159,24 +172,14 @@
   line-height: 0.8;
 }
 
-/* .hero-text-content p:last-of-type::before {
-  content: "13";
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 3rem;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.4);
-  line-height: 0.8;
-} */
-
 .my-ebalo {
-  width: 500px;
-  height: 500px;
-  object-fit: cover;
+  width: 450px;
+  height: 450px;
+  object-fit:contain;
   max-width: 100%; /* Ensure image doesn't overflow on small screens */
   height: auto;
   aspect-ratio: 1/1;
+  margin-left: 0px;
 }
 
 .about-content {
@@ -351,12 +354,14 @@ html {
 
   .nav-bar .nav-links {
     gap: 0.8rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     width: 100%;
+    margin-right: 0; /* Remove margin on mobile */
+    /* max-height: none;  */
   }
 
-  .nav-bar button {
+  .button-nav {
     font-size: 0.85rem;
     padding: 0.4rem 0.8rem;
   }
@@ -419,8 +424,9 @@ html {
   }
 
   .my-ebalo {
-    width: 320px;
-    height: 320px;
+    min-width: 400px;
+    min-height: 400px;
+    justify-content: start;
   }
 
   .about-content {
@@ -489,11 +495,13 @@ html {
 
   .nav-bar .nav-links {
     gap: 0.5rem;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
+    margin-right: 0; /* Remove margin on mobile */
+    /* max-height: 100px; */
   }
 
-  .nav-bar button {
+  .button-nav {
     font-size: 0.85rem;
     padding: 0.5rem 1rem;
     width: 100%;

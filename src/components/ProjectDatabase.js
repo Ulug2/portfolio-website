@@ -5,6 +5,7 @@ import tutorAI1 from './assets/tutorAI1.png';
 import tutorAI2 from './assets/tutorAI2.png';
 import tutorAI3 from './assets/tutorAI3.png';
 import tutorAI4 from './assets/tutorAI4.png';
+import tutorAICover from './assets/tutorCover.jpg';
 import greaseGallery1 from './assets/greaseGallery1.png';
 import greaseGallery2 from './assets/greaseGallery2.png';
 import greaseGallery3 from './assets/greaseGallery3.png';
@@ -15,9 +16,40 @@ import pettok4 from './assets/pettokProfile.png'
 import pettok5 from './assets/pettokLevels.png'
 import pettok6 from './assets/pettokVideo.png'
 import pettok7 from './assets/pettokMain.png'
+import reddit1 from './assets/reddit1.png'
+import reddit2 from './assets/reddit2.png'
+import reddit3 from './assets/reddit3.png'
+import reddit4 from './assets/reddit4.png'
+import redditCover from './assets/redditCover.png'
 
 // Project data
 const projects = [
+    {
+        id: 'redditclone',
+        title: 'Reddit Clone App',
+        event: 'Personal Project',
+        date: '2025',
+        description:
+            'A full-stack social platform built with Expo and React Native, featuring user authentication, post creation, comments, voting, and community-style interactions.',
+        achievements: [
+            'Designed and built a modern Reddit-style UI using Expo and React Native, supporting posts, comments, and voting.',
+            'Implemented user authentication and secure data storage using Supabase.',
+            'Developed reusable components for posts, comments, and thread views to ensure fast development and maintainability.',
+            'Integrated TanStack Query for data caching, optimistic updates, and smooth UX.',
+            'Created a scalable folder structure ready for future features such as communities, profiles, and real-time chat.',
+        ],
+        techStack: [
+            'React Native',
+            'Expo',
+            'Supabase',
+            'TanStack Query',
+            'TypeScript'
+        ],
+        images: [reddit1, reddit2, reddit3, reddit4],
+        cover: [redditCover],
+        githubLink: 'https://github.com/Ulug2/reddit-clone',
+        liveLink: 'https://drive.google.com/file/d/1D53BKCYnfeuo_HovwNgAjcjzpKDPulZn/view?usp=sharing'
+    },
     {
         id: 'pettokai',
         title: 'PetTok AI Mobile App',
@@ -70,27 +102,27 @@ const projects = [
             'Optimized system performance and conversational flow to handle complex queries while maintaining accuracy and context in extended learning sessions.'
         ],
         techStack: ['Java', 'OpenAI GPT-4', 'Telegram Bot API'],
-        images: [tutorAI4, tutorAI2, tutorAI3],
-        cover: [tutorAI4],
+        images: [tutorAI1, tutorAI2, tutorAI3],
+        cover: [tutorAICover],
         githubLink: 'https://github.com/Ulug2/TutorAI',
         liveLink: 'doesnotexist'
     },
-    {
-        id: 'greaseGallery',
-        title: 'Grease Gallery Website',
-        event: 'YCP Hackathon',
-        date: 'November 2024',
-        description: 'A website for uploading, analyzing, and managing grease sample images.',
-        achievements: [
-            'Designed and implemented a website for uploading, analyzing, and managing grease sample images.',
-            'Developed functionality for color analysis and dataset creation, enabling efficient extraction of color values in various formats and attachment to sample IDs.'
-        ],
-        techStack: ['React', 'TypeScript', 'Python', 'Image Processing'],
-        images: [greaseGallery1, greaseGallery2, greaseGallery3],
-        cover: [greaseGallery1],
-        githubLink: 'https://github.com/Ulug2/grease-gallery-rasp-web-2',
-        liveLink: 'https://grease-gallery-rasp-web.vercel.app/'
-    }
+    // {
+    //     id: 'greaseGallery',
+    //     title: 'Grease Gallery Website',
+    //     event: 'YCP Hackathon',
+    //     date: 'November 2024',
+    //     description: 'A website for uploading, analyzing, and managing grease sample images.',
+    //     achievements: [
+    //         'Designed and implemented a website for uploading, analyzing, and managing grease sample images.',
+    //         'Developed functionality for color analysis and dataset creation, enabling efficient extraction of color values in various formats and attachment to sample IDs.'
+    //     ],
+    //     techStack: ['React', 'TypeScript', 'Python', 'Image Processing'],
+    //     images: [greaseGallery1, greaseGallery2, greaseGallery3],
+    //     cover: [greaseGallery1],
+    //     githubLink: 'https://github.com/Ulug2/grease-gallery-rasp-web-2',
+    //     liveLink: 'https://grease-gallery-rasp-web.vercel.app/'
+    // }
 ];
 
 export default projects;
